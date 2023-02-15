@@ -42,9 +42,6 @@ const [todos, setTodos] = useState([]);
 
     <Col className='container'>
     <div className="todo-app">
-      <h1>Task Timer</h1>
-      <p>Get organized and stay on top of your to-do list with our user-friendly Task Timer. 
-        Keep track of your tasks and mark them as complete with a click!</p>
       <TodoForm addTodo={addTodo}/>
       {todos.map((todo)=>{
         return (

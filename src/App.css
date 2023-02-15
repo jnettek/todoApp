@@ -68,9 +68,24 @@ background-image: linear-gradient(62deg, #8EC5FC 0%, #E0C3FC 100%);
   width: 55%;
   min-height: 800px;
   text-align: center;
-  margin: 128px auto;
+  margin: 20px auto;
   border-radius: 10px;
   padding-bottom: 32px;
+}
+
+.header {
+  display: flex;
+  flex-direction: column;
+  justify-content: start;
+  width: 55%;
+  /* min-height: 800px; */
+  text-align: center;
+  margin: 48px auto;
+  border-radius: 10px;
+}
+
+.header p {
+  margin-top: 12px;
 }
 
 .important-btn {
@@ -196,22 +211,28 @@ span {
   background-color: black;
 }
 
-
-.widget {
-  position: fixed;
-  top: 8%;
-  left: 50%;
-  transform: translate(-50%, -50%);
-  width: 80%;
-  height: 125px;
-  margin: 0;
-  background-color: #fcfdfd;
-  border-radius: 9px;
-  padding: 25px;
-  padding-right: 30px;
-  box-shadow: 0px 31px 35px -26px #080c21;
+.widget-container {
+  display: flex;
+  justify-content: center;
+  margin: 25px;
 }
 
+
+.widget {
+  width: 280px;
+  height: auto;
+  background: rgb(236, 204, 242) 0%;
+  padding: .5rem;
+  border-radius: 1rem;
+  border: .5vmin solid #ffffff;
+  box-shadow: .4rem .4rem #e9eaef;
+  overflow: hidden;
+  margin: 20px;
+}
+
+.ticker {
+  padding:  12px 6px;
+}
 
 .city
 {
@@ -227,6 +248,31 @@ span {
   font-size: 1em;
   color: rgba(0,0,0,0.9);
   font-weight: 25;
+}
+
+.card_quote {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  margin: auto 0;
+  height: 100px; /* you can adjust this value to fit your needs */
+  width: 100%; /* you can adjust this value to fit your needs */
+  /* border: 1px solid black; */
+  padding: 8px;
+  box-sizing: border-box;
+  overflow: hidden;
+}
+
+.card_quote p {
+  margin: 0;
+  text-align: center;
+}
+
+.btnn {
+  margin-top: 20px;  
+  display: block;
+  margin: 0 auto;
 }
 
 
@@ -304,6 +350,12 @@ span {
     font-size: 100%;
     align-items: center;
     padding: 0px 16px;
+  }
+
+  .widget-container {
+    display: grid;
+    justify-content: center;
+    margin: 25px;
   }
 
 }
