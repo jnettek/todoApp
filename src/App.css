@@ -36,3 +36,274 @@
     transform: rotate(360deg);
   }
 }
+
+
+
+
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande',
+    'Lucida Sans', Arial, sans-serif;
+}
+
+body {
+background-color: #8EC5FC;
+background-image: linear-gradient(62deg, #8EC5FC 0%, #E0C3FC 100%);
+}
+
+.container {
+  background-image: url(./img//group_workplace.svg);
+  width: 100%;
+  height: auto;
+  background-repeat: no-repeat;
+  background-position: center bottom;
+}
+
+.todo-app {
+  display: flex;
+  flex-direction: column;
+  justify-content: start;
+  width: 55%;
+  min-height: 800px;
+  text-align: center;
+  margin: 128px auto;
+  border-radius: 10px;
+  padding-bottom: 32px;
+}
+
+.important-btn {
+  margin-right: 5px;
+  width: 20px;
+  border-width: 1px;
+  border-radius: 49%;
+  padding: 1px;
+  border-color: white;
+  color: white;
+  background: transparent;
+}
+
+h1 {
+  font-size: 33px;
+  color: rgb(153, 101, 205)
+}
+
+p {
+  margin-bottom: 20px;
+  font-style: bold;
+}
+
+.complete {
+  text-decoration: line-through;  
+}
+
+
+
+.todo-form {
+  margin-bottom: 32px;
+
+}
+
+.todo-input {
+  padding: 14px 32px 14px 16px;
+  border-radius: 4px 0 0 4px;
+  border: 2px solid rgba(236, 204, 242, 1);
+  outline: none;
+  width: 75%;
+}
+
+.todo-button {
+  padding: 16px;
+  border: none;
+  border-radius: 0 4px 4px 0;
+  cursor: pointer;
+  outline: none;
+  background:rgb(236, 204, 242) 0%;
+  color: white;
+  text-transform: capitalize;
+}
+
+
+.todo-container {
+  display: flex;
+  flex-direction: row;
+  position: relative;
+}
+
+.todo-box {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin: 4px auto;
+  color: white;
+  padding: 16px;
+  border-radius: 5px;
+  width: 90%;
+  background:rgb(236, 204, 242) 0%;
+}
+
+
+.todo-row {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin: 4px auto;
+  color: white;
+  background: rgb(236, 204, 242) 0%;
+  padding: 16px;
+  border-radius: 5px;
+  width: 90%;
+}
+
+span {
+  display: flex;
+  align-items: center;
+}
+
+.iconsContainer {
+  display: flex;
+  align-items: center;
+  font-size: 24px;
+  cursor: pointer;
+
+}
+
+.iconsTimer {
+  display: flex;
+  align-items: center;
+  font-size: 22px;
+  margin: 0 6px;
+  cursor: pointer;
+
+}
+
+.timerContainer {
+  display: flex;
+  align-items: center;
+  margin: 0 16px;
+  font-size: 19px;
+}
+
+.hidden {
+  display: none;
+}
+
+.seperator {
+  height: 1px;
+  width: 80%;
+  align-self: center;
+  background-color: black;
+}
+
+
+.widget {
+  position: fixed;
+  top: 8%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  width: 80%;
+  height: 125px;
+  margin: 0;
+  background-color: #fcfdfd;
+  border-radius: 9px;
+  padding: 25px;
+  padding-right: 30px;
+  box-shadow: 0px 31px 35px -26px #080c21;
+}
+
+
+.city
+{
+  font-size: 1rem;
+  font-weight: bold;
+  text-transform: uppercase;
+  padding-top: 5px;
+  color: rgba(0,0,0,0.7);
+}
+
+.temp
+{
+  font-size: 1em;
+  color: rgba(0,0,0,0.9);
+  font-weight: 25;
+}
+
+
+@media (max-width: 768px) {
+
+  .todo-box {
+  flex-direction: column;
+  margin: 4px auto;
+  color: white;
+  background:rgb(236, 204, 242) 0%;
+  padding: 16px;
+  border-radius: 5px;
+  width: 90%;
+  } 
+
+  .timerContainer {
+    display: flex;
+    align-items: center;
+    margin: 16px;
+    font-size: 19px;
+  }
+
+  .todo-row {
+    text-align: center;
+    align-items: center;
+    padding: 0px 16px;
+  }
+
+}
+@media (max-width: 425px) {
+
+  
+  .todo-form {
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    margin: 4px auto;
+  }
+
+  .todo-input {
+    display: flex;
+    align-items: center;
+    width: 95%;
+  }
+
+  .todo-button {
+   width: 95%;
+  }
+
+  .todo-box {
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  margin: 4px auto;
+  color: white;
+  background:rgb(236, 204, 242) 0%;
+  border-radius: 5px;
+  width: 90%;
+  } 
+
+  .timerContainer {
+    display: flex;
+    align-items: center;
+    margin: 16px;
+    font-size: 100%;
+  }
+
+  .iconsContainer {
+    display: flex;
+    align-items: center;
+  }
+
+  .todo-row {
+    text-align: center;
+    font-size: 100%;
+    align-items: center;
+    padding: 0px 16px;
+  }
+
+}
