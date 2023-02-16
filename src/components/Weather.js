@@ -90,7 +90,11 @@ const WeatherAPI = () => {
           </div>
         </div>
       ) : (
+        <div className="widget">
+          <div className="card_quote">
         <p>Loading weather data...</p>
+        </div>
+        </div>
       )}
     <div className="widget">
     <div className='card_quote'>
