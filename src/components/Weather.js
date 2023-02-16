@@ -38,7 +38,7 @@ const WeatherAPI = () => {
       //hide api key with.env
       const apiKey = process.env.REACT_APP_WEATHER_API_KEY;
       const { lat, lon } = location;
-      const url = `http://api.openweathermap.org/data/2.5/weather?lat=${lat}&lon=${lon}&appid=${apiKey}`;
+      const url = `https://api.openweathermap.org/data/2.5/weather?lat=${lat}&lon=${lon}&appid=${apiKey}`;
       const res = await fetch(url);
       const data = await res.json();
       // console.log(data);
