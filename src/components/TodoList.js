@@ -1,5 +1,4 @@
 import React, { useState } from 'react'
-import { Row, Col, Container } from "react-bootstrap";
 import TodoForm from './TodoForm';
 import TodoItem from './TodoItem';
 
@@ -36,11 +35,9 @@ const [todos, setTodos] = useState([]);
    
 
   return (
-    <Container>
-   
-    <Row>
 
-    <Col className='container'>
+
+    <div className='container'>
     <div className="todo-app">
       <TodoForm addTodo={addTodo}/>
       {todos.map((todo)=>{
@@ -54,9 +51,7 @@ const [todos, setTodos] = useState([]);
           )
         })}
     </div>
-      </Col>
-        </Row>
-        </Container>
+   </div>
 
   );
 }

@@ -11,8 +11,8 @@ export default function TodoForm(props) {
     }
 
     return (
-        <div>
-            <form onSubmit={handleSubmit} className='todo-form'>
+        <div className='todo-form'>
+            <form onSubmit={handleSubmit} >
                 <input 
                 // set the input value to nothing
                 value={Input}
